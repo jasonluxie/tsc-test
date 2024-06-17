@@ -19,12 +19,19 @@ const jasonStringGeneric: User<string> = {
   miscellaneous: "hello world",
 };
 
-const jasonArrayGeneric: User<boolean> = {
+const jasonBooleanGeneric: User<boolean> = {
   firstName: "jason",
   lastName: "xie",
   age: 28,
   miscellaneous: true,
 };
+
+const jasonArrayGeneric: User<Array<number>> = {
+    firstName: "jason",
+    lastName: "xie",
+    age: 28,
+    miscellaneous: [1,2,3],
+  };
 
 console.log(jasonNumberGeneric);
 
