@@ -27,3 +27,17 @@ const jasonArrayGeneric: User<boolean> = {
 };
 
 console.log(jasonNumberGeneric);
+
+//using or operator in case something does not exist or is undefined
+const users: Array<User<number>> | undefined = []; //array of users with number generic, use or operator as it can be undefined if there are no users
+const fetchedUser: User<string> | null = null; //fetched user from array, can be null if user does not exist
+
+function numberCount(num:number): Array<number> {
+    const result: Array<number> = []
+    for (let i=0; i < num; i ++) {
+        result.push(i)
+    }
+    return result
+}
+
+console.log(numberCount(5))
