@@ -21,6 +21,7 @@ const jasonStringGeneric: User<string> = {
 
 const jasonBooleanGeneric: User<boolean> = {
   firstName: "jason",
+  
   lastName: "xie",
   age: 28,
   miscellaneous: true,
